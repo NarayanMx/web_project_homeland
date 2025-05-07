@@ -1,4 +1,4 @@
-.main__title{
+.content__title{
 margin-top: 92px;
 margin-bottom: 0px;
 margin-left: calc((100vw - 984px) / 2);
@@ -8,7 +8,7 @@ font-size: 54px;
 line-height: 58px;
 }
 
-.main__introduction{
+.content__introduction{
 margin-top: 40px;
 margin-left: calc((100vw - 984px) / 2);
 margin-bottom: 0px;
@@ -19,7 +19,7 @@ line-height: 34px;
 max-width: 738px;
 }
 
-.main__quote{
+.content__quote{
 margin-top: 10px;
 margin-left: calc((100vw - 984px) / 2);
 margin-bottom: 0px;
@@ -31,7 +31,7 @@ text-align: right;
 max-width: 738px;
 }
 
-.main__text{
+.content__text{
 margin-top: 32px;
 margin-left: calc((100vw - 984px) / 2);
 margin-bottom: 0px;
@@ -44,19 +44,19 @@ max-width: 722px;
 
 @media screen and (max-width: 1024px){
 
-.main__title_break{
+.content__title_break{
 display: none;
 }
 
-.main__introduction_break{
+.content__introduction_break{
 display: none;
 }
 
-.main__text_break{
+.content__text_break{
 display: none;
 }
 
-.main__title{
+.content__title{
 margin-top: 90px;
 margin-left: 3.125vw;
 margin-right: 4.8175vw;
@@ -64,14 +64,14 @@ font-size: 45px;
 line-height: 49px;
 }
 
-.main__introduction{
+.content__introduction{
 margin-top: 50px;
 margin-right: 3.125vw;
 margin-left: 3.125vw;
 max-width: 720px;
 }
 
-.main__quote{
+.content__quote{
 margin-top: -8px;
 margin-right: 3.125vw;
 margin-left: 3.125vw;
@@ -80,7 +80,7 @@ line-height: 34px;
 max-width: 720px;
 }
 
-.main__text{
+.content__text{
 margin-top: 32px;
 margin-right: 3.125vw;
 margin-left: 3.125vw;
@@ -95,7 +95,7 @@ max-width: 720px;
 
 @media screen and (max-width: 544px){
 
-.main__title{
+.content__title{
 margin-top: 64px;
 margin-left: 5vw;
 margin-right: 5vw;
@@ -103,19 +103,19 @@ font-size: 32px;
 line-height: 35px;
 }
 
-.main__introduction{
+.content__introduction{
 margin-top: 40px;
 margin-left: 5vw;
 margin-right: 5vw;
 }
 
-.main__quote{
+.content__quote{
 margin-top: 10px;
 margin-left: 5vw;
 margin-right: 5vw;
 }
 
-.main__text{
+.content__text{
 margin-top: 32px;
 margin-left: 5vw;
 margin-right: 5vw;
