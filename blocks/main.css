@@ -44,18 +44,6 @@ max-width: 722px;
 
 @media screen and (max-width: 1024px){
 
-.main__title_break{
-display: none;
-}
-
-.main__introduction_break{
-display: none;
-}
-
-.main__text_break{
-display: none;
-}
-
 .main__title{
 margin-top: 90px;
 margin-left: 3.125vw;
