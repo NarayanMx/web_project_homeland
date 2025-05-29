@@ -1,0 +1,274 @@
+.place{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: flex-start;
+width: 984px;
+max-height: 859px;
+margin-bottom: 80px;
+}
+
+.place__title{
+font-family: "Inter", sans-serif;
+font-weight: 900;
+font-size: 72px;
+line-height: 76px;
+max-width: 460px;
+max-height: 152px;
+margin-top: 0;
+margin-bottom: 48px;
+}
+
+.place__image{
+width: 460px;
+height: 460px;
+box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.place__button{
+width: 289px;
+height: 48px;
+margin-top: 48px;
+background: linear-gradient(90deg, #0278FE 0%, #003A7B 99.98%);
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+border-radius: 4px;
+display: flex;
+}
+
+.place__button-text{
+font-family: "Inter", sans-serif;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+color: #FFFFFF;
+margin: auto;
+text-align: center;
+text-decoration: none;
+}
+
+.place__website{
+max-width: 456px;
+margin-left: 40px;
+margin-top: 85px;
+margin-bottom: 22px;
+justify-content: flex-end;
+}
+
+.place__website-title{
+margin-top: 0;
+margin-bottom: 8px;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 12px;
+letter-spacing: 1.44px;
+color: #AAAAAA;
+}
+
+.place__website-text{
+margin-top: 0;
+margin-bottom: 0;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+}
+
+.place__paragraph{
+  margin: 0;
+margin-top: 23px;
+margin-left: 40px;
+align-items: flex-end;
+max-width: 484px;
+font-family: "Inter", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 163%;
+color: #FFFFFF;
+}
+
+.place__button:hover{
+background: linear-gradient(90deg, rgba(2, 120, 254, 0.25) 0%, rgba(0, 58, 123, 0.25) 99.98%);
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+border-radius: 4px;
+}
+
+.place__image:hover{
+filter: brightness(50%);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px){
+.place{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: auto auto auto auto;
+grid-template-areas:
+"title artist"
+"image letter1"
+"image letter2"
+". letter3";
+max-width: 722px;
+margin-bottom: 72px;
+max-height: 100%;
+height: auto;
+position: relative;
+
+}
+
+.place__title{
+grid-area: title;
+font-family: "Inter", sans-serif;
+font-weight: 900;
+font-size: 42px;
+line-height: 46px;
+max-width: 340px;
+margin: 0;
+margin-top: 22px;
+
+}
+
+.place__image{
+grid-area: image;
+width: 44vw;
+object-fit: cover;
+max-width: 340px;
+max-height: 340px;
+margin: 0;
+margin-top: 48px;
+
+}
+
+.place__button{
+grid-area: image;
+margin: 0;
+width: 44vw;
+max-width: 289px;
+position: absolute;
+top: 436px;
+
+}
+
+.place__website{
+grid-area: artist;
+max-width: 352px;
+display: flex;
+flex-direction: column;
+
+margin: 0;
+margin-left: 0;
+}
+
+.place__paragraph{
+margin: 0;
+font-size: 16px;
+max-width: 352px;
+
+}
+
+.place__paragraph_top{
+grid-area: letter1;
+margin: 0;
+margin-top: 48px;
+}
+
+.place__paragraph_mid{
+grid-area: letter2;
+margin-top: 23px;
+}
+
+.place__paragraph_bott{
+grid-area: letter3;
+margin-top: 23px;
+}
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 544px){
+.place{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+grid-template-rows: auto auto auto auto auto auto auto;
+grid-template-areas:
+"title"
+"artist"
+"image"
+"letter1"
+"letter2"
+"letter3"
+"button";
+max-width: 320px;
+margin-bottom: 50px;
+max-height: 100%;
+height: auto;
+}
+
+.place__title{
+grid-area: title;
+font-family: "Inter", sans-serif;
+font-weight: 900;
+font-size: 32px;
+line-height: 35px;
+max-width: 288px;
+margin: 0;
+justify-self: center;
+}
+
+.place__image{
+grid-area: image;
+width: 100%;
+object-fit: cover;
+max-width: 320px;
+max-height: 320px;
+margin: 0;
+margin-top: 30px;
+}
+
+.place__button{
+grid-area: button;
+margin: 0;
+margin-top: 30px;
+width: 100vw;
+max-width: 320px;
+position: static;
+}
+
+.place__website{
+grid-area: artist;
+max-width: 288px;
+display: block;
+flex-direction: row;
+margin: 0;
+margin-top: 30px;justify-self: center;
+}
+
+.place__paragraph{
+margin: 0;
+font-size: 16px;
+max-width: 352px;
+}
+
+.place__paragraph_top{
+grid-area: letter1;
+margin: 0;
+margin-top: 30px;
+}
+
+.place__paragraph_mid{
+grid-area: letter2;
+margin-top: 25px;
+}
+
+.place__paragraph_bott{
+grid-area: letter3;
+margin-top: 25px;
+}
+}
